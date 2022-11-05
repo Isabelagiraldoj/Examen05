@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ventasbarrio_examen04
 {
-     class Program
+     public class Program
     {
-       static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Programa para identificar Barrio con mejor tendero");
 
@@ -74,7 +74,7 @@ namespace ventasbarrio_examen04
             Console.WriteLine($"\nSe ha identificado que el mejor promedio fue del " +
                 $"barrio {nombreMejorBarrio} con promedio de {promedioMejorBarrio.ToString("0.00")}");
         }
-         static void IdentificaMejorPromedioBarrio(float[] arregloPromedios, string[] arregloBarrios, out float mejorPromedio, out string nombreMejorBarrio)
+        public static void IdentificaMejorPromedioBarrio(float[] arregloPromedios, string[] arregloBarrios, out float mejorPromedio, out string nombreMejorBarrio)
         {
             mejorPromedio = 0;
             nombreMejorBarrio = "";
@@ -94,7 +94,7 @@ namespace ventasbarrio_examen04
                 }
             }
         }
-       static int[] TotalizaPedidosBarrio(Pedido[] arregloPedidos, string[] arregloBarrios)
+       public static int[] TotalizaPedidosBarrio(Pedido[] arregloPedidos, string[] arregloBarrios)
         {
             int[] totalPedidosBarrio = new int[arregloBarrios.Length];
 
@@ -114,7 +114,7 @@ namespace ventasbarrio_examen04
 
             return totalPedidosBarrio;
         }
-          static int[] TotalizaGalletasBarrio(Pedido[] arregloPedidos, string[] arregloBarrios)
+        public  static int[] TotalizaGalletasBarrio(Pedido[] arregloPedidos, string[] arregloBarrios)
         {
             int[] totalGalletasBarrio = new int[arregloBarrios.Length];
 
