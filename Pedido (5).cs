@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ventasbarrio_examen04
 {
-     class Pedido
+    public class Pedido
     { //Atributos
         private string barrio;
         private int cantidadGalletas;
